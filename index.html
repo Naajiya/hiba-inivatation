@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Hiba & Ansif · Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Great+Vibes&family=Amiri&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="c" aria-hidden="true"></canvas>
+
+<div id="cover">
+  <div class="door l"></div><div class="door r"></div>
+  <div class="mid">
+    <svg class="arch" viewBox="0 0 200 260" aria-hidden="true"><path pathLength="1" d="M20 250V110a80 80 0 0 1 160 0v140z"/><path pathLength="1" d="M32 250V112a68 68 0 0 1 136 0v138" style="animation-delay:.5s"/></svg>
+    <div class="ini">H &amp; A</div>
+    <p class="t">A wedding invitation</p>
+    <button class="go" id="open">Open</button>
+  </div>
+</div>
+
+<main>
+<section>
+  <p class="ar in">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+  <p class="in d1" style="font-size:1.45rem">Mr Basheer KK &amp; Mrs Jameela</p>
+  <p class="p in d2 sm">cordially invite your esteemed presence on the joyous occasion of the wedding of our daughter</p>
+</section>
+
+<section>
+  <div class="frame">
+    <p class="sc in">Hiba</p><p class="sc in d1" style="font-size:2.4rem;color:var(--gold)">&amp;</p><p class="sc in d2">Ansif</p>
+    <p class="sm in d3" style="margin-top:.6rem">Hiba Fathima<br>Muhammed Ansif<br><span style="font-size:.85rem;opacity:.8">S/o Late Azeez &amp; Mrs Rafiyath<br>Parambath, Narikkatteri</span></p>
+  </div>
+</section>
+
+<section>
+  <div class="date in"><span>NOVEMBER</span><b>14</b><span>2026</span></div>
+  <p class="in d1 gold" style="font-size:1.4rem">Saturday · 11 AM onwards</p>
+  <div class="cd in d2"><div><b id="dd">0</b><small>days</small></div><div><b id="hh">0</b><small>hours</small></div><div><b id="mm">0</b><small>mins</small></div><div><b id="ss">0</b><small>secs</small></div></div>
+</section>
+
+<section>
+  <p class="sm in">Nikkah</p>
+  <p class="sc in d1" style="font-size:clamp(2.4rem,10vw,3.8rem)">at the groom’s residence</p>
+  <p class="p in d2 sm">Parambath, Narikkatteri<br>Scan to find the location</p>
+  <img class="qr in d3" alt="QR code for the venue location" src="qr.png">
+</section>
+
+<section>
+  <p class="sc in" style="font-size:clamp(2.8rem,12vw,4.4rem)">Join us</p>
+  <p class="p in d1 sm">Your presence and prayers will make our day complete.</p>
+  <p class="credit in d2">created by <em>Najiya</em></p>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body></html>
