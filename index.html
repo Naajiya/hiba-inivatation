@@ -6,6 +6,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Great+Vibes&family=Amiri&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"></head><body>
 <canvas id="c" aria-hidden="true"></canvas>
+<button class="scroll" id="sc" aria-label="Scroll down">
+  <span>Scroll</span>
+  <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+    <path d="M5 8l7 7 7-7M5 14l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
 
 <div id="cover">
   <div class="door l"></div><div class="door r"></div>
@@ -38,16 +44,18 @@
 </section>
 
 <section>
-  <p class="sm in">Nikkah</p>
-  <p class="sc in d1" style="font-size:clamp(2.4rem,10vw,3.8rem)">at the groom’s residence</p>
-  <p class="p in d2 sm">Parambath, Narikkatteri<br>Scan to find the location</p>
-  <img class="qr in d3" alt="QR code for the venue location" src="qr.png">
+  <p class="sm in">Wedding</p>
+  <p class="sc in d1" style="font-size:clamp(2.4rem,10vw,3.8rem)">at the bride's residence</p>
+  <p class="p in d2 sm">Parambath, Narikkatteri<br>Scan or tap to find the location</p>
+  <a href="https://maps.app.goo.gl/EKaj7UQoNCEcAZNx9?g_st=am" target="_blank" rel="noopener" class="qr-link" aria-label="Open the venue location in maps">
+    <img class="qr in d3" alt="QR code for the venue location" src="qr.png">
+  </a>
 </section>
 
 <section>
   <p class="sc in" style="font-size:clamp(2.8rem,12vw,4.4rem)">Join us</p>
   <p class="p in d1 sm">Your presence and prayers will make our day complete.</p>
-  <p class="credit in d2">created by <em>Najiya</em></p>
+  <p class="credit">created by <i style="color: white;">Najiya</i></p>
 </section>
 </main>
 

@@ -19,3 +19,12 @@ function draw(){x.clearRect(0,0,W,H);
  requestAnimationFrame(draw)}
 if(!matchMedia('(prefers-reduced-motion:reduce)').matches)draw();
 })();
+
+var a=document.getElementById('sc');
+document.getElementById('open').addEventListener('click',function(){
+  setTimeout(function(){a.classList.add('show')},2000);
+});
+a.onclick=function(){scrollBy({top:innerHeight*.9,behavior:'smooth'})};
+addEventListener('scroll',function(){
+  a.classList.toggle('end',scrollY+innerHeight>=document.documentElement.scrollHeight-90);
+},{passive:true});
